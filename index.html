@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vichr Strechy</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#"><img id="logo" src="/assets/strechy_vichr-removebg-preview.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Galerie</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">O nás</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Partneři</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Crafting Your Roofs</h1>
+            <p>Quality roofing services for every home and business</p>
+            <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+        </div>
+    </section>
+
+    <section class="gallery py-5">
+        <div class="container page-fade">
+            <h2 class="text-center mb-5">Our Recent Projects</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card img-card position-relative">
+                        <img src="https://via.placeholder.com/600x400" class="card-img img-fluid gallery-img" alt="Project 1">
+                        <div class="img-overlay"><h5>Project 1</h5></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card img-card position-relative">
+                        <img src="https://via.placeholder.com/600x400" class="card-img img-fluid gallery-img" alt="Project 2">
+                        <div class="img-overlay"><h5>Project 2</h5></div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card img-card position-relative">
+                        <img src="https://via.placeholder.com/600x400" class="card-img img-fluid gallery-img" alt="Project 3">
+                        <div class="img-overlay"><h5>Project 3</h5></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal" id="gallery-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Image Preview</h5>
+                        <button type="button" class="close" id="close-modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modal-image" src="" alt="Expanded Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+    </section>
+
+    <script src="script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
