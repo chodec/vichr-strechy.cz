@@ -11,7 +11,16 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"><img id="logo" src="/assets/strechy_vichr-removebg-preview.png" alt=""></a>
+        <div class="d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center pr-3" href="#">
+                <img id="logo" src="/assets/strechy_vichr-removebg-preview.png" alt="">
+                <div class="line"></div>
+                <div class="brand-text pl-3">
+                    <span class="brand-text-yellow">Vaše střecha</span><br>
+                    <span class="brand-text-red">naše starost</span>
+                </div>
+            </a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,6 +33,7 @@
             </ul>
         </div>
     </nav>
+    
 
     <section class="hero">
         <div class="hero-text">
@@ -39,42 +49,90 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card img-card position-relative">
-                        <img src="https://via.placeholder.com/600x400" class="card-img img-fluid gallery-img" alt="Project 1">
-                        <div class="img-overlay"><h5>Project 1</h5></div>
+                        <img src="assets/gallery1/1.jpg" class="card-img img-fluid gallery-img" alt="Project 1">
+                        <div class="img-overlay"><h5>Novostavby</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card img-card position-relative">
-                        <img src="https://via.placeholder.com/600x400" class="card-img img-fluid gallery-img" alt="Project 2">
-                        <div class="img-overlay"><h5>Project 2</h5></div>
+                        <img src="assets/gallery2/1.jpg" class="card-img img-fluid gallery-img" alt="Project 2">
+                        <div class="img-overlay"><h5>Rekonstrukce</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card img-card position-relative">
-                        <img src="https://via.placeholder.com/600x400" class="card-img img-fluid gallery-img" alt="Project 3">
-                        <div class="img-overlay"><h5>Project 3</h5></div>
+                        <img src="assets/gallery3/1.jpg" class="card-img img-fluid gallery-img" alt="Project 3">
+                        <div class="img-overlay"><h5>Opravy</h5></div>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="modal" id="gallery-modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Image Preview</h5>
-                        <button type="button" class="close" id="close-modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img id="modal-image" src="" alt="Expanded Image" class="img-fluid">
-                    </div>
+    </section>
+
+    <!-- Project 1 Gallery -->
+    <div class="project-gallery" id="gallery1">
+        <div class="container-fluid">
+            <div class="row gallery-row">
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery1/1.jpg" alt="Project 1 Image 1" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery1/2.jpg" alt="Project 1 Image 2" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery1/3.jpg" alt="Project 1 Image 3" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery1/4.jpg" alt="Project 1 Image 4" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3d-flex justify-content-center">
+                    <img src="assets/gallery1/5.jpg" alt="Project 1 Image 5" class="img-fluid">
                 </div>
             </div>
-        </div>        
-        
-    </section>
+        </div>
+    </div>
+
+    <div class="project-gallery" id="gallery2">
+        <div class="container-fluid">
+            <div class="row gallery-row">
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery2/1.jpg" alt="Project 1 Image 1" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery2/2.jpg" alt="Project 1 Image 2" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery2/3.jpg" alt="Project 1 Image 3" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery2/4.jpg" alt="Project 1 Image 4" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery2/5.jpg" alt="Project 1 Image 5" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery2/6.jpg" alt="Project 1 Image 5" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery2/7.jpg" alt="Project 1 Image 5" class="img-fluid">
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery2/5.jpg" alt="Project 1 Image 5" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-gallery" id="gallery3">
+        <div class="container-fluid">
+            <div class="row gallery-row">
+                <div class="col-6 col-md-4 col-lg-3 mb-3 d-flex justify-content-center">
+                    <img src="assets/gallery3/1.jpg" alt="Project 1 Image 1" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

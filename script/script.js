@@ -1,25 +1,24 @@
-const galleryImages = document.querySelectorAll('.gallery-img')
-const modal = document.getElementById('gallery-modal')
-const modalImage = document.getElementById('modal-image')
-const closeModal = document.getElementById('close-modal')
+const galleryOverlay = document.createElement('div')
+galleryOverlay.classList.add('gallery-overlay')
+galleryOverlay.innerHTML = `
+    <span class="close-overlay">&times;</span>
+    <div class="gallery-images"></div>
+`
+document.body.appendChild(galleryOverlay)
 
-galleryImages.forEach(img => {
-    img.addEventListener('click', () => {
-        modalImage.src = img.src // Set the modal image source
-        modal.classList.add('show') // Add 'show' class to open modal
+const closeOverlay = document.querySelector('.close-overlay')
+const galleryImages = document.querySelector('.gallery-images')
+
+document.querySelectorAll('.card').forEach((card, index) => {
+    card.addEventListener('click', () => {
+        const galleryId = `#gallery${index + 1}`
+        const gallery = document.querySelector(galleryId)
+
+        galleryImages.innerHTML = gallery.innerHTML
+        galleryOverlay.classList.add('active')
     })
 })
 
-closeModal.addEventListener('click', () => {
-    modal.classList.remove('show') // Remove 'show' class to close modal
+closeOverlay.addEventListener('click', () => {
+    galleryOverlay.classList.remove('active')
 })
-
-window.addEventListener('click', (e) => {
-    if (e.target === modal) {
-        modal.classList.remove('show') // Remove 'show' class to close modal
-    }
-})
-
-window.onload = function() {
-    modal.classList.remove('show') // Ensure modal is hidden on load
-}
