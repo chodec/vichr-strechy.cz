@@ -1,6 +1,11 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #F2f2f2;
 }
 
 .navbar {
@@ -11,7 +16,12 @@ body {
 }
 
 .navbar-brand, .navbar-nav .nav-link {
-    color: #fff !important;
+    color: #F2f2f2 !important;
+}
+
+.nav-item:hover{
+    scale: 1.2;
+    transition: all .5s;
 }
 
 .hero {
@@ -34,16 +44,39 @@ body {
     position: absolute;
     left: 50px;
     top: 50%;
+    width: 34%;
     transform: translateY(-50%);
     color: white;
 }
 
-h1 {
-    font-size: 4rem;
+.btn-primary{
+    background-color: #da251d;
+    border: none;
 }
 
-p {
-    font-size: 1.5rem;
+.btn-primary:hover{
+    background-color: #f7ed00;
+    transition: all 1s;
+    color: #da251d;
+    scale: 1.2; 
+    border: none;
+}
+
+.container h2{
+    font-size: 3.4rem;
+    letter-spacing: 0.19rem;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 0.21rem;
+    font-weight: 600;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    letter-spacing: 0.08rem;
 }
 
 #logo {
@@ -56,13 +89,16 @@ p {
     padding-inline: 1rem;
 }
 
+.card{
+    cursor: pointer;
+}
+
 .img-card {
     overflow: hidden;
     text-align: center;
 }
 
 .img-card img {
-    filter: blur(1px); 
     transition: all 0.3s ease;
     height: 14rem;
 }
