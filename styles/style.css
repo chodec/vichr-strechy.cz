@@ -12,16 +12,26 @@ body {
     position: absolute; 
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
+    padding: 10px 15px;
 }
-
 .navbar-brand, .navbar-nav .nav-link {
     color: #F2f2f2 !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
 .nav-item:hover{
     scale: 1.2;
     transition: all .5s;
+}
+
+.navbar-toggler {
+    border: none;
 }
 
 .hero {
@@ -74,13 +84,14 @@ h1 {
 }
 
 #logo {
-    width: 9rem;
+    width: 10rem; 
     height: auto;
+    margin-bottom: 8px; 
 }
 
 .nav-item {
-    font-size: 1.5rem;
-    padding-inline: 1rem;
+    font-size: 1rem;
+    padding: 0 0.5rem;
 }
 
 .card{
@@ -249,10 +260,10 @@ h1 {
 }
 
 .brand-text {
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 0.08rem;
-    font-weight: bold;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-left: 8px;
+    line-height: 1.2;
 }
 
 .brand-text-red{
@@ -407,4 +418,40 @@ h2 {
 .cookie-banner button:hover {
     background-color: #f7ed00;
     color: #333;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    #logo {
+        width: 7rem; 
+        margin-right: 10px;
+    }
+
+    h1{
+        font-size: 2.7rem;
+        letter-spacing: 0.1rem;
+        font-weight: 600;   
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+    }
 }
