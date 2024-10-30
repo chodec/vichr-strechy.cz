@@ -22,3 +22,20 @@ document.querySelectorAll('.card').forEach((card, index) => {
 closeOverlay.addEventListener('click', () => {
     galleryOverlay.classList.remove('active')
 })
+
+function checkCookie() {
+    return document.cookie.split(';').some(cookie => cookie.trim().startsWith('cookieAccepted='))
+}
+
+
+function acceptCookies() {
+    document.cookie = "cookieAccepted=true; path=/; max-age=" + 60 * 60 * 24 * 365
+    document.getElementById('cookie-banner').style.display = 'none'
+}
+
+window.onload = function() {
+    if (!checkCookie()) {
+        document.getElementById('cookie-banner').style.display = 'block'
+    }
+}
+

@@ -8,6 +8,7 @@
     <title>Vichr střechy</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
 </head>
 <body>
 
@@ -28,21 +29,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><a class="nav-link" href="#gallery">Galerie</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">O nás</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Partneři</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+                <li class="nav-item"><a class="nav-link" href="#aboutus">O nás</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
             </ul>
         </div>
     </nav>
     
-
     <section class="hero">
         <div class="hero-text">
             <h1>Realizace   <span class="brand-text-red">střech</span>, rekonstrukce a <span class="brand-text-yellow">opravy</span></h1>
-            <p>
-                Firma Vichr střechy se zabývá kompletní dodávkou nových i opravami starých střech včetně dodávky materiálu.
-            </p>
-            <a href="#" class="btn btn-primary btn-lg brand-text-yellow">Kontakt</a>
+            <p>Firma Vichr střechy se zabývá kompletní dodávkou nových i opravami starých střech včetně dodávky materiálu.</p>
+            <a href="#contact" class="btn btn-primary btn-lg brand-text-yellow">Kontakt</a>
         </div>
     </section>
 
@@ -73,7 +70,6 @@
         
     </section>
 
-    <!-- Project 1 Gallery -->
     <div class="project-gallery" id="gallery1">
         <div class="container-fluid">
             <div class="row gallery-row">
@@ -137,6 +133,67 @@
         </div>
     </div>
 
+    <section class="about-section py-5" id="aboutus">
+        <div class="container">
+            <h2 class="text-center mb-5">Něco málo o nás</h2>
+            
+            <div class="row align-items-center about">
+                <div class="col-md-6">
+                    <img src="assets/aboutus.jpg" alt="Image 1" class="about-img img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <h3>Co to vlastně děláme?</h3>
+                        <p>Provádíme tesařské, pokrývačské a klempířské práce, nátěry střech, montáže střešních oken, výrobu pergol, altánů, apod., zastřešování balkónů a teras, výškové práce, shazování sněhu při kalamitách, rizikové kácení stromů.</p>    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center about">
+                <div class="col-md-6 order-md-2">
+                    <img src="assets/aboutus2.jpg" alt="Image 2" class="about-img img-fluid">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <div class="about-text">
+                        <h3>Kdo jsme?</h3>
+                        <p>Jsme tým kvalifikovaných řemeslníků a zabýváme se touto činností již 17 let. Pracujeme pro servisy bytových jednotek a družstev i pro vlastníky rodinných domků. Máme zkušenosti s opravou střech kostelů, spolupracujeme s restaurátory památkových objektů.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-section py-5" id="contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Kontaktujte nás</h2>
+                    <p>V případě zájmu s Vámi probereme Vaše potřeby telefonicky, osobně nebo emailem.</p>
+                    <div class="contact-info mt-4">
+                        <p><i class="fas fa-envelope mr-2"></i> info@vichr-strechy.cz</p>
+                        <p><i class="fas fa-phone mr-2"></i> +420 737 554 251, +420 777 581 543</p>
+                        <p><i class="fas fa-info-circle mr-2"></i>Kunětická 9/9, 530 09 Cihelna</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.9335859948083!2d15.769163276810707!3d50.05007541611062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dccdd1f80a311%3A0x74be1cc9a96af2c9!2zS3VuxJt0aWNrw6EgOS85LCA1MzAgMDkgQ2loZWxuYQ!5e0!3m2!1sen!2scz!4v1730302090514!5m2!1sen!2scz"
+                        width="100%"
+                        height="300"
+                        style="border:0; border-radius: 10px;"
+                        allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cookie-banner" id="cookie-banner">
+        <p>We use cookies to improve your experience on our site. By continuing to browse, you agree to our use of cookies.</p>
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+     
     <script src="script/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
